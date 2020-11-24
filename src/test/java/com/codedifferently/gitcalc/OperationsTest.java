@@ -16,7 +16,7 @@ public class OperationsTest {
         int actual = Operations.add(x, y);
 
         //Then
-        Assert.assertEquals(expected,actual);
+        Assert.assertEquals(expected, actual);
     }
 
     @Test
@@ -30,7 +30,7 @@ public class OperationsTest {
         int actual = Operations.subtract(x, y);
 
         //Then
-        Assert.assertEquals(expected,actual);
+        Assert.assertEquals(expected, actual);
     }
 
     @Test
@@ -47,4 +47,18 @@ public class OperationsTest {
         Assert.assertEquals(expected, actual);
     }
 
+    @Test
+    public void testDivide() throws Exception {
+        // Given
+        double x = 50;
+        double y = 5;
+
+        //When
+        double expected =10 ;
+        double actual = Operations.divide( x, y);
+
+        //Then
+        Assert.assertEquals(expected, actual, 0.0);
+
+    }
 }
