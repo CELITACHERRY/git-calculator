@@ -41,7 +41,7 @@ public class Operations {
      * @return x divided by y
      */
     public static double divide(double x, double y) {
-        return 0;
+        return x/y;
     }
 
     {
